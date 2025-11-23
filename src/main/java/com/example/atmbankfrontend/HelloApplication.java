@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -19,10 +20,20 @@ public class HelloApplication extends Application {
         stage.show();
     }
 
-    private Scene CreateInsertCardPage(){
-        System.out.println("hello");
-        StackPane stackpane = new StackPane();
 
+
+    private Scene CreateMainPage(){
+        StackPane stackpane = new StackPane();
+        GridPane gridpane = new GridPane();
+        stackpane.getChildren().add(gridpane);
+
+
+        return new Scene(stackpane);
+
+    }
+
+    private Scene CreateInsertCardPage(){
+        StackPane stackpane = new StackPane();
         Button insert_card_button = new Button("Insert your card!");
         stackpane.getChildren().add(insert_card_button);
 
