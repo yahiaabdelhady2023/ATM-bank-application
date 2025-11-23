@@ -21,6 +21,7 @@ public class HelloApplication extends Application {
         HBox navbar = CreateNavBar();
 
         Scene scene = CreateInsertCardPage(navbar);
+        scene.getStylesheets().add("design.css"); //ensure that design.css is under src/resources
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
@@ -35,6 +36,13 @@ public class HelloApplication extends Application {
         Text temp_text = new Text("+7°");
         Button back_button = new Button("Back");
 
+        bank_name_text.getStyleClass().add("navbar-title");
+        day_text.getStyleClass().add("navbar-element");
+        time_text.getStyleClass().add("navbar-element");
+        back_button.getStyleClass().add("navbar-element");
+        temp_text.getStyleClass().add("navbar-element");
+
+
         ObservableList<String> languages=FXCollections.observableArrayList(
                 "English","Arabic","French"
         );
@@ -42,6 +50,10 @@ public class HelloApplication extends Application {
 
         ComboBox<String> combo_box = new ComboBox<>(languages);
         combo_box.setValue("English");
+        combo_box.setId("combo_box");
+
+        combo_box.getStyleClass().add("navbar-element");
+
         Region region_1 = new Region();
         Region region_2 = new Region();
 
