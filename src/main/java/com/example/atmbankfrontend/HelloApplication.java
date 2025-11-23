@@ -2,15 +2,13 @@ package com.example.atmbankfrontend;
 
 import javafx.application.Application;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -32,12 +30,25 @@ public class HelloApplication extends Application {
         HBox hbox = new HBox();
 
         Text bank_name_text = new Text("ATM Name");
-        Text time_text = new Text("Sun 27");
+        Text day_text = new Text("Sun 27");
+        Text time_text = new Text("20:34 PM");
+        Text temp_text = new Text("+7°");
+        Button back_button = new Button("Back");
 
-        String languages[] = {"English","Arabic","French"};
-//        ComboBox combo_box = new ComboBox(FXCollections.observableArrayList(languages));
+        ObservableList<String> languages=FXCollections.observableArrayList(
+                "English","Arabic","French"
+        );
 
-        hbox.getChildren().addAll(bank_name_text,time_text);
+
+        ComboBox<String> combo_box = new ComboBox<>(languages);
+        combo_box.setValue("English");
+        Region region_1 = new Region();
+        Region region_2 = new Region();
+
+        hbox.getChildren().addAll(bank_name_text,region_1,combo_box,time_text,day_text,temp_text,region_2,back_button);
+        HBox.setHgrow(region_1, Priority.ALWAYS);
+        HBox.setHgrow(region_2, Priority.ALWAYS);
+
         hbox.setAlignment(Pos.TOP_CENTER);
         hbox.setSpacing(10);
         return  hbox;
