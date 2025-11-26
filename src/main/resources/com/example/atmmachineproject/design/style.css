@@ -17,6 +17,6 @@
 }
 
 .root{
-    -fx-background-color:  #1e90ff;
-
+    //-fx-background-color:  #1e90ff;
+    -fx-background-color:  white;
 }

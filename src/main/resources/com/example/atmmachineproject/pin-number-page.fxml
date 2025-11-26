@@ -8,6 +8,7 @@
 
 <?import javafx.scene.text.Text?>
 <?import java.net.URL?>
+<?import javafx.geometry.Insets?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.atmmachineproject.PinNumberController"
@@ -16,6 +17,9 @@
       VBox.vgrow="ALWAYS"
 
 >
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
     <fx:include source="nav-bar.fxml"></fx:include>
 
     <stylesheets>

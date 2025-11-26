@@ -12,8 +12,9 @@
       fx:controller="com.example.atmmachineproject.NavBarController"
       spacing="10"
  >
-<Text text="NavBAR test"></Text>
-    <Text text="NavBAR test"></Text>
-    <Text text="NavBAR test"></Text>
-    <Text text="NavBAR test"></Text>
+<Text text="London Banks"></Text>
+    <Pane HBox.hgrow="ALWAYS" />
+    <Text text="20:34"></Text>
+    <Text text="Sun, 23"></Text>
+    <Text text="+7°"></Text>
 </HBox>
