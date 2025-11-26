@@ -7,11 +7,16 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Text?>
-<GridPane xmlns="http://javafx.com/javafx"
-          xmlns:fx="http://javafx.com/fxml"
-          fx:controller="com.example.atmmachineproject.MainPageController"
-          prefHeight="400.0" prefWidth="600.0">
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.atmmachineproject.MainPageController"
+      spacing="10"
+      prefHeight="400.0" prefWidth="600.0"
+>
+
     <fx:include source="nav-bar.fxml"></fx:include>
+    <GridPane alignment="CENTER">
     <Text text="Your Balance"
     GridPane.rowIndex="0"
     GridPane.columnIndex="1"></Text>
@@ -50,4 +55,5 @@
             GridPane.rowIndex="4"
             GridPane.columnIndex="2"
     ></Button>
-</GridPane>
+    </GridPane>
+</VBox>
