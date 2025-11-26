@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.atmmachineproject.WithDrawMoneyController"
+          prefHeight="400.0" prefWidth="600.0">
+
+    <Button text="50$"
+    GridPane.columnIndex="0"
+    GridPane.rowIndex="0"
+    onAction="#OnPressMoneyAmount"
+    ></Button>
+
+    <Button text="100$"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="0"
+            onAction="#OnPressMoneyAmount"
+    ></Button>
+
+
+    <Button text="200$"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="1"
+            onAction="#OnPressMoneyAmount"
+    ></Button>
+
+    <Button text="500$"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="1"
+            onAction="#OnPressMoneyAmount"
+    ></Button>
+
+    <Text text="Money to withdraw :"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="3"
+          fx:id="money_text"
+    ></Text>
+
+</GridPane>
