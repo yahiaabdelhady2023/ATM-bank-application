@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.collections.FXCollections?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.atmmachineproject.NavBarController"
+      spacing="10"
+ >
+<Text text="London Banks"></Text>
+    <Pane HBox.hgrow="ALWAYS" />
+    <ComboBox promptText="Language" fx:id="language">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="English"></String>
+                <String fx:value="Arabic"></String>
+                <String fx:value="French"></String>
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <Text text="20:34"></Text>
+    <Text text="Sun, 23"></Text>
+    <Text text="+7°"></Text>
+</HBox>
