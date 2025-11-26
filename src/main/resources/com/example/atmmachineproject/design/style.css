@@ -1,4 +1,22 @@
 .button{
 
-    -fx-background-color: #4CAF50;
+    -fx-background-color: #00bfff;
+    -fx-text-fill: white;
+}
+
+.button-digit{
+    -fx-background-color: #00bfff;
+    -fx-text-fill: white;
+
+
+}
+
+.text{
+    -fx-text-fill: white;
+
+}
+
+.root{
+    -fx-background-color:  #1e90ff;
+
 }

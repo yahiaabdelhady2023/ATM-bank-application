@@ -14,6 +14,7 @@
       fx:controller="com.example.atmmachineproject.MainPageController"
       spacing="10"
       prefHeight="400.0" prefWidth="600.0"
+      VBox.vgrow="ALWAYS"
 >
 
     <stylesheets>
@@ -24,7 +25,21 @@
 
 
 
-    <GridPane alignment="CENTER">
+    <GridPane alignment="CENTER" hgap="5" vgap="5" GridPane.vgrow="ALWAYS" GridPane.hgrow="ALWAYS"   >
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+
+        </rowConstraints>
+
+
     <Text text="Your Balance"
     GridPane.rowIndex="0"
     GridPane.columnIndex="1"></Text>
@@ -37,31 +52,38 @@
     <Button text="Hide" onAction="#OnPressHide"
         GridPane.rowIndex="2"
         GridPane.columnIndex="1"
+            maxWidth="Infinity" maxHeight="Infinity"
     ></Button>
 
     <Button text="Cash Deposit"
     GridPane.rowIndex="3"
     GridPane.columnIndex="0"
+            maxWidth="Infinity" maxHeight="Infinity"
     ></Button>
     <Button text="Money Transfer"
     GridPane.rowIndex="3"
     GridPane.columnIndex="1"
+            maxWidth="Infinity" maxHeight="Infinity"
     ></Button>
     <Button text="History"
     GridPane.rowIndex="3"
     GridPane.columnIndex="2"
+            maxWidth="Infinity" maxHeight="Infinity"
     ></Button>
     <Button text="Cash Withdrawal"
     GridPane.rowIndex="4"
     GridPane.columnIndex="0"
+            maxWidth="Infinity" maxHeight="Infinity"
     ></Button>
     <Button text="Change PIN"
     GridPane.rowIndex="4"
     GridPane.columnIndex="1"
+            maxWidth="Infinity" maxHeight="Infinity"
     ></Button>
     <Button text="Others"
             GridPane.rowIndex="4"
             GridPane.columnIndex="2"
+            maxWidth="Infinity" maxHeight="Infinity"
     ></Button>
     </GridPane>
 </VBox>
