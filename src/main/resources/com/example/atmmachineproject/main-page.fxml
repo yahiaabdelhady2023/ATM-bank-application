@@ -76,6 +76,8 @@
     GridPane.rowIndex="4"
     GridPane.columnIndex="0"
     onAction="#OnPressWithDrawMoney"
+            maxWidth="Infinity" maxHeight="Infinity"
+
     ></Button>
     <Button text="Change PIN"
     GridPane.rowIndex="4"
