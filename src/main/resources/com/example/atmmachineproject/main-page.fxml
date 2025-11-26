@@ -41,6 +41,7 @@
     <Button text="Cash Withdrawal"
     GridPane.rowIndex="4"
     GridPane.columnIndex="0"
+    onAction="#OnPressWithDrawMoney"
     ></Button>
     <Button text="Change PIN"
     GridPane.rowIndex="4"
