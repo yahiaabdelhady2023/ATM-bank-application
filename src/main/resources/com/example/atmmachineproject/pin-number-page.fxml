@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.atmmachineproject.PinNumberController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Text text="Enter your pin number"
+          GridPane.rowIndex="0"
+          GridPane.columnIndex="0"
+          GridPane.columnSpan="3"></Text>
+    <PasswordField
+                   GridPane.rowIndex="1"
+                   GridPane.columnIndex="0"
+                   GridPane.columnSpan="3"
+    fx:id="PinField"></PasswordField>
+    <Button text="1"
+            GridPane.rowIndex="2"
+            GridPane.columnIndex="0"
+            onAction="#OnPressDigit"></Button>
+    <Button text="2"
+            GridPane.rowIndex="2"
+            GridPane.columnIndex="1"
+            onAction="#OnPressDigit"></Button>
+
+    <Button text="3"
+            GridPane.rowIndex="2"
+            GridPane.columnIndex="2"
+            onAction="#OnPressDigit"></Button>
+
+    <Button text="Cancel"
+            GridPane.rowIndex="2"
+            GridPane.columnIndex="3"
+            onAction="#OnPressCancel"></Button>
+
+    <Button text="4"
+            GridPane.rowIndex="3"
+            GridPane.columnIndex="0"
+            onAction="#OnPressDigit"></Button>
+
+    <Button text="5"
+            GridPane.rowIndex="3"
+            GridPane.columnIndex="1"
+            onAction="#OnPressDigit"></Button>
+
+    <Button text="6"
+            GridPane.rowIndex="3"
+            GridPane.columnIndex="2"
+            onAction="#OnPressDigit"></Button>
+
+    <Button text="clear"
+            GridPane.rowIndex="3"
+            GridPane.columnIndex="3"
+            onAction="#OnPressClear"></Button>
+
+    <Button text="7"
+            GridPane.rowIndex="4"
+            GridPane.columnIndex="0"
+            onAction="#OnPressDigit"></Button>
+
+    <Button text="8"
+            GridPane.rowIndex="4"
+            GridPane.columnIndex="1"
+            onAction="#OnPressDigit"></Button>
+
+    <Button text="9"
+            GridPane.rowIndex="4"
+            GridPane.columnIndex="2"
+            onAction="#OnPressDigit"></Button>
+
+    <Button text="Enter"
+            GridPane.rowIndex="4"
+            GridPane.columnIndex="3"
+            onAction="#OnPressEnter"></Button>
+
+    <Button text="0"
+            GridPane.rowIndex="5"
+            GridPane.columnIndex="0"
+            GridPane.columnSpan="3"
+            onAction="#OnPressDigit"></Button>
+</GridPane>
