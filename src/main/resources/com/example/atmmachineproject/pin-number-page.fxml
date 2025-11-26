@@ -7,16 +7,37 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
 <VBox xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.atmmachineproject.PinNumberController"
-            spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.atmmachineproject.PinNumberController"
+      spacing="10"
       prefHeight="400.0" prefWidth="600.0"
+      VBox.vgrow="ALWAYS"
+
 >
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
     <fx:include source="nav-bar.fxml"></fx:include>
 
+    <stylesheets>
+        <URL value="@design/style.css"></URL>
+    </stylesheets>
+    <GridPane alignment="CENTER" vgap="5" hgap="5" GridPane.vgrow="ALWAYS" GridPane.hgrow="ALWAYS">
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
 
-    <GridPane alignment="CENTER">
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+
+        </rowConstraints>
 
     <Text text="Enter your pin number"
           GridPane.rowIndex="0"
@@ -26,70 +47,111 @@
                    GridPane.rowIndex="1"
                    GridPane.columnIndex="0"
                    GridPane.columnSpan="3"
+                   maxWidth="Infinity" maxHeight="Infinity"
     fx:id="PinField"></PasswordField>
     <Button text="1"
             GridPane.rowIndex="2"
             GridPane.columnIndex="0"
-            onAction="#OnPressDigit"></Button>
+            onAction="#OnPressDigit"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
     <Button text="2"
             GridPane.rowIndex="2"
             GridPane.columnIndex="1"
-            onAction="#OnPressDigit"></Button>
+            onAction="#OnPressDigit"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
 
     <Button text="3"
             GridPane.rowIndex="2"
             GridPane.columnIndex="2"
-            onAction="#OnPressDigit"></Button>
+            onAction="#OnPressDigit"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
 
     <Button text="Cancel"
             GridPane.rowIndex="2"
             GridPane.columnIndex="3"
-            onAction="#OnPressCancel"></Button>
+            onAction="#OnPressCancel"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
 
     <Button text="4"
             GridPane.rowIndex="3"
             GridPane.columnIndex="0"
-            onAction="#OnPressDigit"></Button>
+            onAction="#OnPressDigit"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
 
     <Button text="5"
             GridPane.rowIndex="3"
             GridPane.columnIndex="1"
-            onAction="#OnPressDigit"></Button>
+            onAction="#OnPressDigit"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
 
     <Button text="6"
             GridPane.rowIndex="3"
             GridPane.columnIndex="2"
-            onAction="#OnPressDigit"></Button>
+            onAction="#OnPressDigit"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+
+    ></Button>
 
     <Button text="clear"
             GridPane.rowIndex="3"
             GridPane.columnIndex="3"
-            onAction="#OnPressClear"></Button>
+            onAction="#OnPressClear"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
 
     <Button text="7"
             GridPane.rowIndex="4"
             GridPane.columnIndex="0"
-            onAction="#OnPressDigit"></Button>
+            onAction="#OnPressDigit"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
 
     <Button text="8"
             GridPane.rowIndex="4"
             GridPane.columnIndex="1"
-            onAction="#OnPressDigit"></Button>
+            onAction="#OnPressDigit"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
 
     <Button text="9"
             GridPane.rowIndex="4"
             GridPane.columnIndex="2"
-            onAction="#OnPressDigit"></Button>
+            onAction="#OnPressDigit"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
 
     <Button text="Enter"
             GridPane.rowIndex="4"
             GridPane.columnIndex="3"
-            onAction="#OnPressEnter"></Button>
+            onAction="#OnPressEnter"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
 
     <Button text="0"
             GridPane.rowIndex="5"
             GridPane.columnIndex="0"
             GridPane.columnSpan="3"
-            onAction="#OnPressDigit"></Button>
+            onAction="#OnPressDigit"
+            styleClass="button-digit"
+            maxWidth="Infinity" maxHeight="Infinity"
+    ></Button>
     </GridPane>
 </VBox>

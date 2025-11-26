@@ -12,6 +12,7 @@
       fx:controller="com.example.atmmachineproject.MainPageController"
       prefHeight="400.0" prefWidth="600.0"
       spacing="10"
+
 >
 
 
@@ -22,43 +23,55 @@
         <Text text="Page 4"></Text>
     </HBox>
 
-    <GridPane alignment="CENTER">
+    <GridPane alignment="CENTER" >
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+
+        </rowConstraints>
         <Button text="1"
         GridPane.rowIndex="0"
-        GridPane.columnIndex="0"></Button>
+        GridPane.columnIndex="0" maxWidth="Infinity" maxHeight="Infinity"></Button>
 
         <Button text="2"
                 GridPane.rowIndex="0"
-                GridPane.columnIndex="1"></Button>
+                GridPane.columnIndex="1" maxWidth="Infinity" maxHeight="Infinity"></Button>
 
         <Button text="3"
                 GridPane.rowIndex="0"
-                GridPane.columnIndex="2"></Button>
+                GridPane.columnIndex="2" maxWidth="Infinity" maxHeight="Infinity"></Button>
 
         <Button text="4"
                 GridPane.rowIndex="1"
-                GridPane.columnIndex="0"></Button>
+                GridPane.columnIndex="0" maxWidth="Infinity" maxHeight="Infinity"></Button>
         <Button text="5"
                 GridPane.rowIndex="1"
-                GridPane.columnIndex="1"></Button>
+                GridPane.columnIndex="1" maxWidth="Infinity" maxHeight="Infinity"></Button>
         <Button text="6"
                 GridPane.rowIndex="1"
-                GridPane.columnIndex="2"></Button>
+                GridPane.columnIndex="2" maxWidth="Infinity" maxHeight="Infinity"></Button>
 
         <Button text="7"
                 GridPane.rowIndex="1"
-                GridPane.columnIndex="3"></Button>
+                GridPane.columnIndex="3" maxWidth="Infinity" maxHeight="Infinity"></Button>
 
         <Button text="8"
                 GridPane.rowIndex="2"
-                GridPane.columnIndex="0"></Button>
+                GridPane.columnIndex="0" maxWidth="Infinity" maxHeight="Infinity"></Button>
 
         <Button text="9"
                 GridPane.rowIndex="2"
-                GridPane.columnIndex="1"></Button>
+                GridPane.columnIndex="1" maxWidth="Infinity" maxHeight="Infinity"></Button>
 
         <Button text="0"
                 GridPane.rowIndex="2"
-                GridPane.columnIndex="2"></Button>
+                GridPane.columnIndex="2" maxWidth="Infinity" maxHeight="Infinity"></Button>
     </GridPane>
 </VBox>
