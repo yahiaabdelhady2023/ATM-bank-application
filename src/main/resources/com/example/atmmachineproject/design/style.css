@@ -20,3 +20,14 @@
     //-fx-background-color:  #1e90ff;
     -fx-background-color:  white;
 }
+
+.combo-box{
+    -fx-background-color: black;
+    //-fx-background-color: transparent;
+    -fx-background-radius: 20px;
+}
+
+.combo-box .list-view > .list-cell{
+
+    -fx-text-fill: #FF0000;
+}
