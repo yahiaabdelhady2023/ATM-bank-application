@@ -31,9 +31,12 @@
         <columnConstraints>
             <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
             <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+
 
         </columnConstraints>
         <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
             <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
             <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
 
@@ -87,4 +90,5 @@
         ></Button>
 
 </GridPane>
+    <fx:include source="exit-back.fxml"></fx:include>
 </VBox>
