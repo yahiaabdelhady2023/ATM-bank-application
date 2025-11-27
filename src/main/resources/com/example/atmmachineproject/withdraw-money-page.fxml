@@ -90,5 +90,7 @@
         ></Button>
 
 </GridPane>
+    <Pane HBox.hgrow="ALWAYS" />
+
     <fx:include source="exit-back.fxml"></fx:include>
 </VBox>
