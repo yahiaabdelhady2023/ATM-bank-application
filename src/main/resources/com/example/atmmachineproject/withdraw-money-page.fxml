@@ -77,6 +77,14 @@
           fx:id="money_text"
 
     ></Text>
+        <Button text="Confirm"
+                GridPane.columnIndex="0"
+                GridPane.rowIndex="4"
+                fx:id="confirm_button"
+                maxWidth="Infinity" maxHeight="Infinity"
+                GridPane.columnSpan="2"
+                onAction="#OnPressConfirm"
+        ></Button>
 
 </GridPane>
 </VBox>
