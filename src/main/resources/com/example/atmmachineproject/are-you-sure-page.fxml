@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.atmmachineproject.AreYouSureController"
+           prefHeight="400.0" prefWidth="600.0" spacing="50">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <stylesheets>
+        <URL value="@design/style.css"></URL>
+    </stylesheets>
+    <fx:include source="nav-bar.fxml"></fx:include>
+
+
+    <HBox alignment="CENTER">
+        <Text text="Are you sure you want to proceed with this operation?"></Text>
+    </HBox>
+    <HBox spacing="100" alignment="CENTER">
+        <Button text="Yes" onAction="#OnPressYes"/>
+        <Button text="No" onAction="#GoToMainPage"/>
+    </HBox>
+
+
+
+
+
+</VBox>
