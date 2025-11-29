@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.atmmachineproject.DepositController"
+      spacing="50"
+      prefHeight="400.0" prefWidth="600.0"
+      VBox.vgrow="ALWAYS"
+>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <stylesheets>
+        <URL value="@design/style.css"></URL>
+    </stylesheets>
+
+    <fx:include source="nav-bar.fxml"></fx:include>
+
+
+
+    <GridPane alignment="CENTER" hgap="5" vgap="5" GridPane.vgrow="ALWAYS" GridPane.hgrow="ALWAYS"   >
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="20"/>
+
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+            <RowConstraints vgrow="ALWAYS" percentHeight="20"/>
+
+        </rowConstraints>
+
+
+        <Text text="Enter the amount of money you want to deposit"
+        GridPane.rowIndex="0"
+        GridPane.columnIndex="0"></Text>
+        <TextField GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="IntegerField"></TextField>
+        <Button text="Confirm"
+                GridPane.rowIndex="2"
+                GridPane.columnIndex="0"
+                GridPane.columnSpan="2"
+                maxWidth="Infinity" maxHeight="Infinity"
+                onAction="#ConfirmDeposit"
+        ></Button>
+    </GridPane>
+</VBox>

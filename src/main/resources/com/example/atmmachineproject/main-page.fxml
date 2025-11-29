@@ -61,6 +61,7 @@
     GridPane.rowIndex="3"
     GridPane.columnIndex="0"
             maxWidth="Infinity" maxHeight="Infinity"
+            onAction="#OnPressDeposit"
     ></Button>
     <Button text="Money Transfer"
     GridPane.rowIndex="3"
@@ -84,7 +85,7 @@
     GridPane.columnIndex="1"
             maxWidth="Infinity" maxHeight="Infinity"
     ></Button>
-    <Button text="Others"
+    <Button text="Account"
             GridPane.rowIndex="4"
             GridPane.columnIndex="2"
             maxWidth="Infinity" maxHeight="Infinity"
