@@ -39,11 +39,22 @@ public class DepositController {
         if (isInteger(deposit_amount) && !(isNegative(deposit_amount)) ) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Deposit Message");
-            alert.setContentText("You have Deposited " + deposit_amount + "$ Succesfully!");
+            alert.setContentText("You have Deposited " + Integer.parseInt(deposit_amount) + "$ Succesfully!");
             alert.show();
             IntegerField.clear();
         }
-        else{
+        else if (deposit_amount.isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Deposit Message");
+            alert.setContentText("You must enter amount!");
+            alert.show();
+        } else if (isNegative(deposit_amount)) {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Deposit Message");
+            alert.setContentText("Error you cannot deposit negative numbers!");
+            alert.show();
+            IntegerField.clear();
+        } else{
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Deposit Message");
             alert.setContentText("Error you must use digits only!");
