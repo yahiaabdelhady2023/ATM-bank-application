@@ -41,5 +41,13 @@ public class MainPageController {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void OnPressTransfer(ActionEvent event) throws  IOException{
+        Parent root = FXMLLoader.load(getClass().getResource("money-transfer.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }
 
