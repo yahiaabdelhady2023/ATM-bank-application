@@ -73,6 +73,7 @@
     GridPane.rowIndex="3"
     GridPane.columnIndex="2"
             maxWidth="Infinity" maxHeight="Infinity"
+            onAction="#OnPressHistory"
     ></Button>
     <Button text="Cash Withdrawal"
     GridPane.rowIndex="4"
