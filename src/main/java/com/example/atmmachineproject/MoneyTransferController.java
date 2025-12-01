@@ -14,11 +14,14 @@ public class MoneyTransferController {
         account_number_string = AccountNumberField.getText();
         transfer_money_string = TransferMoneyField.getText();
 
-        if (DepositController.isInteger(account_number_string) && !(DepositController.isNegative(account_number_string))){
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Deposit Message");
-            alert.setContentText("Account number is valid!");
-            alert.show();
-        }
+        GeneralUtilities.CheckIfEmpty(account_number_string,  AccountNumberField, "Account Number: You cannot just leave empty textfield");
+        GeneralUtilities.CheckIfNonNumeric(account_number_string,  AccountNumberField, "Account Number: You cannot have non-numeric characters!");
+        GeneralUtilities.CheckIfNegativeDigit(account_number_string,  AccountNumberField, "Account Number: You cannot have negative digits!");
+
+        GeneralUtilities.CheckIfEmpty(transfer_money_string,  TransferMoneyField, "Transfer: You cannot just leave empty textfield");
+        GeneralUtilities.CheckIfNonNumeric(transfer_money_string,  TransferMoneyField, "Transfer: You cannot have non-numeric characters!");
+        GeneralUtilities.CheckIfNegativeDigit(transfer_money_string,  TransferMoneyField, "Transfer: You cannot have negative digits!");
+
+
     }
 }
