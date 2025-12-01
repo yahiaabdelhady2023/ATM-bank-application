@@ -36,31 +36,10 @@ public class DepositController {
     public void ConfirmDeposit(ActionEvent event){
         deposit_amount = IntegerField.getText();
 
-        if (isInteger(deposit_amount) && !(isNegative(deposit_amount)) ) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Deposit Message");
-            alert.setContentText("You have Deposited " + Integer.parseInt(deposit_amount) + "$ Succesfully!");
-            alert.show();
-            IntegerField.clear();
-        }
-        else if (deposit_amount.isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setTitle("Deposit Message");
-            alert.setContentText("You must enter amount!");
-            alert.show();
-        } else if (isNegative(deposit_amount)) {
-            Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setTitle("Deposit Message");
-            alert.setContentText("Error you cannot deposit negative numbers!");
-            alert.show();
-            IntegerField.clear();
-        } else{
-            Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setTitle("Deposit Message");
-            alert.setContentText("Error you must use digits only!");
-            alert.show();
-            IntegerField.clear();
-        }
+        GeneralUtilities.CheckIfEmpty(deposit_amount,  IntegerField, "You cannot just leave empty textfield");
+        GeneralUtilities.CheckIfNonNumeric(deposit_amount,  IntegerField, "You cannot have non-numeric characters!");
+        GeneralUtilities.CheckIfValidDigit(deposit_amount,  IntegerField, "You did successfully deposit ");
+        GeneralUtilities.CheckIfNegativeDigit(deposit_amount,  IntegerField, "You cannot have negative digits!");
 
 
     }
