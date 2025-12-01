@@ -27,5 +27,12 @@
         <URL value="@design/style.css"></URL>
     </stylesheets>
 
-    <Button text="History Page!"></Button>
+    <TableView fx:id="history_table">
+        <columns>
+            <TableColumn text="Date" fx:id="date"></TableColumn>
+            <TableColumn text="Operation" fx:id="operation"></TableColumn>
+            <TableColumn text="Money" fx:id="money"></TableColumn>
+            <TableColumn text="Receiver" fx:id="receiver"></TableColumn>
+        </columns>
+    </TableView>
 </VBox>
